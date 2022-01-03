@@ -280,7 +280,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="images\behari.jpg" />
     <Content Include="images\reshmi.jpg" />
     <Content Include="images\tikka.jpg" />
     <Content Include="Models\DBModel.Context.tt">
@@ -366,6 +365,8 @@
     <Content Include="Models\DBModel.edmx.diagram">
       <DependentUpon>DBModel.edmx</DependentUpon>
     </Content>
+    <Content Include="ClassDiagram2.cd" />
+    <None Include="Properties\PublishProfiles\Default.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

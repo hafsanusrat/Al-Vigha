@@ -82,7 +82,7 @@ namespace AlVigha.Controllers
             //var itemsTodel = DB.Carts.Where(x => x.account_ID == accID). ;
             //DB.SaveChanges();
 
-            return View("Index", "Home");
+            return View("Index", "UOrderHistory");
         }
 
     }
