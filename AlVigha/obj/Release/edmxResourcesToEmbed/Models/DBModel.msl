@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AlVighaModelStoreContainer" CdmEntityContainer="AlVighaEntities">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="AlVighaModel.Account">
+        <MappingFragment StoreEntitySet="Accounts">
+          <ScalarProperty Name="account_ID" ColumnName="account_ID" />
+          <ScalarProperty Name="account_type" ColumnName="account_type" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="location" ColumnName="location" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carts">
+      <EntityTypeMapping TypeName="AlVighaModel.Cart">
+        <MappingFragment StoreEntitySet="Cart">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="account_ID" ColumnName="account_ID" />
+          <ScalarProperty Name="itemID" ColumnName="itemID" />
+          <ScalarProperty Name="itemQuantity" ColumnName="itemQuantity" />
+          <ScalarProperty Name="totalAmount" ColumnName="totalAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menus">
+      <EntityTypeMapping TypeName="AlVighaModel.Menu">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="itemID" ColumnName="itemID" />
+          <ScalarProperty Name="itemName" ColumnName="itemName" />
+          <ScalarProperty Name="itemDesc" ColumnName="itemDesc" />
+          <ScalarProperty Name="itemImgpath" ColumnName="itemImgpath" />
+          <ScalarProperty Name="itemCategory" ColumnName="itemCategory" />
+          <ScalarProperty Name="itemPrice" ColumnName="itemPrice" />
+          <ScalarProperty Name="itemSKU" ColumnName="itemSKU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order_Details">
+      <EntityTypeMapping TypeName="AlVighaModel.Order_Details">
+        <MappingFragment StoreEntitySet="Order_Details">
+          <ScalarProperty Name="detailID" ColumnName="detailID" />
+          <ScalarProperty Name="orderID" ColumnName="orderID" />
+          <ScalarProperty Name="itemQuantity" ColumnName="itemQuantity" />
+          <ScalarProperty Name="itemID" ColumnName="itemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="AlVighaModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="orderID" ColumnName="orderID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="orderTime" ColumnName="orderTime" />
+          <ScalarProperty Name="orderDate" ColumnName="orderDate" />
+          <ScalarProperty Name="orderStatus" ColumnName="orderStatus" />
+          <ScalarProperty Name="numberOfItems" ColumnName="numberOfItems" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="deliveryCharges" ColumnName="deliveryCharges" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reservations">
+      <EntityTypeMapping TypeName="AlVighaModel.Reservation">
+        <MappingFragment StoreEntitySet="Reservations">
+          <ScalarProperty Name="reserveID" ColumnName="reserveID" />
+          <ScalarProperty Name="Reservation_Number" ColumnName="Reservation Number" />
+          <ScalarProperty Name="byName" ColumnName="byName" />
+          <ScalarProperty Name="byEmail" ColumnName="byEmail" />
+          <ScalarProperty Name="byContact" ColumnName="byContact" />
+          <ScalarProperty Name="numberOfPersons" ColumnName="numberOfPersons" />
+          <ScalarProperty Name="reserveDateTime" ColumnName="reserveDateTime" />
+          <ScalarProperty Name="eventType" ColumnName="eventType" />
+          <ScalarProperty Name="byMessage" ColumnName="byMessage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="AlVighaModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="roleID" ColumnName="roleID" />
+          <ScalarProperty Name="roleName" ColumnName="roleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SiteMessages">
+      <EntityTypeMapping TypeName="AlVighaModel.SiteMessage">
+        <MappingFragment StoreEntitySet="SiteMessages">
+          <ScalarProperty Name="msgID" ColumnName="msgID" />
+          <ScalarProperty Name="msgName" ColumnName="msgName" />
+          <ScalarProperty Name="msgEmail" ColumnName="msgEmail" />
+          <ScalarProperty Name="msgSubject" ColumnName="msgSubject" />
+          <ScalarProperty Name="msgBody" ColumnName="msgBody" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

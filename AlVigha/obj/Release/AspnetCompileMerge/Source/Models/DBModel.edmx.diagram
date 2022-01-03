@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="14843e86048b4c7d98498cfa11c6fb82" Name="Diagram1">
+        <EntityTypeShape EntityType="AlVighaModel.Account" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlVighaModel.Cart" Width="1.5" PointX="7.5" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlVighaModel.Menu" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlVighaModel.Order_Details" Width="1.5" PointX="7.5" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlVighaModel.Order" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlVighaModel.Reservation" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlVighaModel.Role" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlVighaModel.SiteMessage" Width="1.5" PointX="7.75" PointY="8.75" IsExpanded="true" />
+        <AssociationConnector Association="AlVighaModel.FK__Accounts__accoun__1ED998B2" ManuallyRouted="false" />
+        <AssociationConnector Association="AlVighaModel.FK__Orders__Customer__22AA2996" ManuallyRouted="false" />
+        <AssociationConnector Association="AlVighaModel.FK__Cart__itemID__1FCDBCEB" ManuallyRouted="false" />
+        <AssociationConnector Association="AlVighaModel.FK__Order_Det__itemI__20C1E124" ManuallyRouted="false" />
+        <AssociationConnector Association="AlVighaModel.FK__Order_Det__order__21B6055D" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
